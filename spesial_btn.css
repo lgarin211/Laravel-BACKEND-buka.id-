@@ -1,11 +1,11 @@
 
 .btn-s {
-    background: #222;
+    background: #fc8621;
     height: 50px;
     min-width: 150px;
     border: none;
     border-radius: 10px;
-    color: #eee;
+    color: #f9e0ae;
     font-size: 40px;
     /* font-family: 'Cookie', cursive; */
     position: relative;
@@ -49,5 +49,5 @@
     width: 150px;
     left: 0;
     border-radius: 0;
-    border-bottom: 2px solid #eee;
+    border-bottom: 2px solid #f9e0ae;
   }
