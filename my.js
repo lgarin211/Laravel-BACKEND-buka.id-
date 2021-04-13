@@ -3,8 +3,8 @@
     document.getElementById("sort_url_div").style.display = "none"
 
     function sa(params) {
-        const as = document.getElementById("cps1").querySelectorAll("#this1")[0].href
-        document.getElementById("modalsort").src = as
+        const as = document.getElementById("cpss1").querySelectorAll("#this1")[0].href
+        document.getElementById("modalsort22").src = as
     }
 
     function foas2(params) {
@@ -18,4 +18,9 @@
         foas2()
         const url = document.getElementById("basic-url1").value
         document.getElementById("modalsort21").src = url
+    }
+
+    function cps2() {
+        const url = document.getElementById("basic-url2").value
+        document.getElementById("modalsort22").src = url
     }
