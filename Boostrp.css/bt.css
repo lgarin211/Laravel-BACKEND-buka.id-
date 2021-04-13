@@ -696,6 +696,8 @@ progress {
 }
 
 .row {
+/* here agus */
+    height: 100%;
     --bs-gutter-x: 1.5rem;
     --bs-gutter-y: 0;
     display: flex;
@@ -922,7 +924,7 @@ progress {
     --bs-gutter-y: 3rem
 }
 
-@media (min-width:576px) {
+@media (max-width:576px) {
     .col-sm {
         flex: 1 0 0%
     }
