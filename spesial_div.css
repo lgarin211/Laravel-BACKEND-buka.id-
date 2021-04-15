@@ -5,8 +5,43 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #2d3436;
-    background-image: linear-gradient(315deg, #682c0e 0%, #c24914 74%);
+    background-color: #0091ea;
+    background-image: linear-gradient(315deg, #0004ea 0%, #0091ea 74%);
+}
+
+#da2 {
+    display: none;
+}
+
+#head1 {
+    width: 100%;
+    height: 100vh;
+    background-color: #0091ea;
+    background-image: linear-gradient(315deg, #0004ea 0%, #0091ea 74%);
+    display: inline;
+    float: left;
+    display: none;
+
+}
+
+.logo-here {
+    margin: 50% auto;
+    color: #fff;
+    font-weight: 600;
+    font-size: 36px;
+    position: absolute;
+    left: 50%;
+    /* top: 50%; */
+    transform: translate(-50%, -50%);
+}
+
+.logo-here2 {
+
+    margin: 50% auto;
+    font-weight: 600;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 50%);
 }
 
 /* * {
@@ -34,13 +69,34 @@
 
 .mails {}
 
+@media screen and (max-width: 500px) {
+    #da {
+        display: none;
+
+    }
+
+    #head1 {
+        display: block
+    }
+
+    /* #mu-slider{
+        height: 40vh;
+    } */
+    #da2 {
+        display: block;
+    }
+
+
+}
+
 @media screen and (max-width: 800px) {
     .spsldiv {
         height: 100vh;
     }
+
     .spsldiv2 {
         height: 80vh;
-        margin-bottom:30px ;
-    
+        margin-bottom: 30px;
+
     }
 }
