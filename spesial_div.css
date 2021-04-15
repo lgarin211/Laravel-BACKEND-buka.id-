@@ -1,7 +1,7 @@
 .spsldiv {
     border-radius: 1%;
     margin-bottom: 10px;
-    height: 20vh;
+    height: 40vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -35,6 +35,29 @@
     transform: translate(-50%, -50%);
 }
 
+
+.logo-here4 {
+    /* margin: 50% auto; */
+    color: #fff;
+    font-weight: 600;
+    font-size: 36px;
+    position: absolute;
+    left: 50%;
+    /* top: 50%; */
+    transform: translate(-50%, -125%);
+}
+
+.inea {
+    margin: 50% auto;
+    color: #fff;
+    font-weight: 600;
+    font-size: 12px;
+    position: absolute;
+    left: 50%;
+    top: 10%;
+    transform: translate(-50%, -50%);
+}
+
 .logo-here2 {
 
     margin: 50% auto;
@@ -42,6 +65,62 @@
     position: absolute;
     left: 50%;
     transform: translate(-50%, 50%);
+}
+
+
+.btn-s {
+    background: #fc8621;
+    height: 50px;
+    min-width: 150px;
+    border: none;
+    border-radius: 10px;
+    color: #f9e0ae;
+    font-size: 40px;
+    /* font-family: 'Cookie', cursive; */
+    position: relative;
+    transition: 1s;
+    -webkit-tap-highlight-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding-top: 5px;
+    margin: auto 6px;
+}
+
+
+
+.btn-s .circle-s {
+    width: 5px;
+    height: 5px;
+    background: transparent;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    overflow: hidden;
+    transition: 500ms;
+}
+
+.noselect {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.btn-s:hover {
+    background: transparent;
+}
+
+.btn-s:hover .circle-s {
+    height: 50px;
+    width: 150px;
+    left: 0;
+    border-radius: 0;
+    border-bottom: 2px solid #f9e0ae;
 }
 
 /* * {
@@ -70,6 +149,20 @@
 .mails {}
 
 @media screen and (max-width: 500px) {
+    #casa{
+        display: none;
+    }
+    .logo-here5 {
+        margin: 50% auto;
+        color: #fff;
+        font-weight: 600;
+        font-size: 36px;
+        position: absolute;
+        left: 50%;
+        /* top: 50%; */
+        transform: translate(-50%, 170%);
+    }
+
     #da {
         display: none;
 
@@ -79,15 +172,22 @@
         display: block
     }
 
-    /* #mu-slider{
-        height: 40vh;
-    } */
     #da2 {
         display: block;
     }
 
 
 }
+
+/* @media screen and (min-width: 425px) {
+    .logo-here2 {
+        margin: 50% auto;
+        font-weight: 600;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, 150%);
+    }
+} */
 
 @media screen and (max-width: 800px) {
     .spsldiv {

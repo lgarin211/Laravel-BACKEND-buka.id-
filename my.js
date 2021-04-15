@@ -29,7 +29,7 @@
     }
 
     function moving(id) {
-        document.getElementById("casing").classList = "col-md-5 col-sm-5 doc"
+        document.getElementById("casing").classList = "col-md-6 col-sm-6 doc"
         document.getElementById("pancar").innerHTML = ""
         document.getElementById("m" + id).style.display = "block"
         document.getElementById("pancar").innerHTML = document.getElementById("m" + id).innerHTML
