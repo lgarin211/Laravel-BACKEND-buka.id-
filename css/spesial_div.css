@@ -1,9 +1,50 @@
+.logo-here7 {
+    position: absolute;
+    /* margin: 50% auto; */
+    color: #fff;
+    font-weight: 600;
+    font-size: 15px;
+
+    /* left: 50%;
+    top: 30%;
+    transform: translate(-50%, 50%); */
+}
+
+.coa {
+    position: absolute;
+    margin-top: 100px;
+}
+
+.coa .form-label {
+    font-size: 20px;
+    color: #fff;
+}
+
+.asaa {
+    /* text-align: center;
+    justify-content: center; */
+    background-color: #0091ea;
+    background-image: linear-gradient(315deg, #0004ea 0%, #0091ea 74%);
+
+}
+
 .spsldiv {
     border-radius: 1%;
     margin-bottom: 10px;
     height: 40vh;
     display: flex;
     align-items: center;
+    justify-content: center;
+    background-color: #0091ea;
+    background-image: linear-gradient(315deg, #0004ea 0%, #0091ea 74%);
+}
+
+.spsldiv2 {
+    border-radius: 1%;
+    margin-bottom: 10px;
+    height: 40vh;
+    display: flex;
+    /* align-items: center; */
     justify-content: center;
     background-color: #0091ea;
     background-image: linear-gradient(315deg, #0004ea 0%, #0091ea 74%);
@@ -23,6 +64,15 @@
     display: none;
 
 }
+#graf{
+    border: red solid;
+    height: 50vh;
+}
+
+.tutupan{
+    height: 40vh;    
+}
+
 
 .logo-here {
     margin: 50% auto;
@@ -33,6 +83,17 @@
     left: 50%;
     /* top: 50%; */
     transform: translate(-50%, -50%);
+}
+
+#base {
+    font-size: 20px;
+    margin: 1px auto;
+}
+#tilbase {
+    color: #fff;
+    position: absolute;
+    font-size: 40px;
+    margin: 40px auto;
 }
 
 
@@ -51,11 +112,11 @@
     margin: 50% auto;
     color: #fff;
     font-weight: 600;
-    font-size: 12px;
+    font-size: 20px;
     position: absolute;
     left: 50%;
     top: 10%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -10%);
 }
 
 .logo-here2 {
@@ -130,7 +191,6 @@
 .spsldiv2 {
     border-radius: 1%;
     margin-bottom: 10px;
-    height: 80vh;
     margin-bottom: 5px auto;
 }
 
@@ -145,22 +205,48 @@
     height: 50vh;
 }
 
+.jus {
+    min-height: 30vh;
+}
 
-.mails {}
+.asas {
+    height: 30vh;
+
+}
 
 @media screen and (max-width: 500px) {
-    #casa{
+    .aroiba {
         display: none;
     }
+
+    .spsldiv {
+        height: 100vh;
+    }
+
+    .spsldiv2 {
+        height: 4/0vh;
+        margin-bottom: 30px;
+    }
+
+
+    #casa {
+        display: none;
+    }
+
+    .aroiba2 {
+        margin: -40px auto 5px auto;
+    }
+
     .logo-here5 {
+        position: absolute;
         margin: 50% auto;
         color: #fff;
         font-weight: 600;
         font-size: 36px;
-        position: absolute;
+
         left: 50%;
-        /* top: 50%; */
-        transform: translate(-50%, 75%);
+        top: 30%;
+        transform: translate(-50%, 50%);
     }
 
     #da {
@@ -177,26 +263,4 @@
     }
 
 
-}
-
-/* @media screen and (min-width: 425px) {
-    .logo-here2 {
-        margin: 50% auto;
-        font-weight: 600;
-        position: absolute;
-        left: 50%;
-        transform: translate(-50%, 150%);
-    }
-} */
-
-@media screen and (max-width: 800px) {
-    .spsldiv {
-        height: 100vh;
-    }
-
-    .spsldiv2 {
-        height: 80vh;
-        margin-bottom: 30px;
-
-    }
 }
