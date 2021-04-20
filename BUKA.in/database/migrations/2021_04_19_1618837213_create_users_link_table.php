@@ -13,7 +13,9 @@ class CreateUsersLinkTable extends Migration
 		$table->id();
 		$table->text('keyword');
 		$table->text('link');
+		$table->text('judul');
 		$table->integer('hits')->default('0');
+        $table->integer("id_user");
         $table->timestamps();
 
         });

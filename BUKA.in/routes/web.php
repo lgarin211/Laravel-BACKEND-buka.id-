@@ -22,3 +22,4 @@ Route::get('/{LINK}', [Welcome::class, 'temukan']);
 
 Route::get('/', [Welcome::class, 'hero']);
 Route::get('/user/sortLink', [Welcome::class, 'sort']);
+Route::post('/user/sortLink', [Welcome::class, 'sort']);

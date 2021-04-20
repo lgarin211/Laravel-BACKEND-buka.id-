@@ -11,34 +11,60 @@ class Welcome extends Controller
     {
         return view('hero');
     }
-
+    //FUNGSI PENGENDALIAN SortLink
     public function sort()
     {
-
+        // mengamati apa ada aksi yang di perlukan melaui ajax dan aksi
         if (!empty($_GET['cekmysort'])) {
-            $user = DB::table('users_link')->where('keyword', $_GET['call'])->first();
 
-            if (isset($user)) {
-                echo 'link sudah ada';
-                die;
-            }else{
-                echo 'link bisa kamu gunakan';
-                die;
+            switch ($_GET['cekmysort']) {
+        // body mengecek apa keyword sudah di gunakan
+                case 991:
+                    $user = DB::table('users_link')->where('keyword', $_GET['call'])->first();
+
+                    if (isset($user)) {
+                        echo 'link sudah ada';
+                        die;
+                    } else {
+                        echo 'link bisa kamu gunakan';
+                        die;
+                    }
+
+                    break;
+                    // body list sortlink seorang user
+                case 992:
+                    $user = DB::table('users_link')->get();
+                    return view('Componen.listsortL', compact('user'));
+                    break;
+                    //aksi penghapusan
+                case 993:
+                    DB::table('users_link')->where('id', $_GET['call'])->delete();
+                    return redirect('/user/sortLink');
+                    break;
+
+
+                default:
+                    # code...
+                    break;
             }
         }
-
+        // aksi menyimpan data
         if (!empty($_POST)) {
-            # code...
+            // dd($_POST);
+            unset($_POST["_token"]);
+            $_POST['hits'] = 0;
+            $_POST['id_user'] = 1;
+            DB::table('users_link')->insert([$_POST]);
+            return redirect('/user/sortLink');
+
         }
 
         return \view('sortlink');
-
     }
 
-
+    // fungsi link finder
     public function temukan(Request $request, $LINK)
     {
-        $user = DB::table('users_link')->where('keyword', $LINK)->first();
         $user = DB::table('users_link')->where('keyword', $LINK)->first();
         if (isset($user)) {
             DB::table('users_link')
