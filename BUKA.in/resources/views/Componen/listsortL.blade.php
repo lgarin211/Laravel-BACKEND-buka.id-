@@ -5,7 +5,7 @@
 
             <ul class="list-group col-sm-12 text-center">
                 <li class="list-group-item active" aria-current="true">Your Link</li>
-                @foreach ($user as $key=>$link )
+                @foreach ($data->sort_link as $key=>$link )
                 <li class="list-group-item" onclick="moving({{$key}})">
                     <div id="maks">
                         <a>{{$link->keyword}}<i style="font-size:30px" class="fa fa-caret-square-o-right"></i></a>

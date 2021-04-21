@@ -11,11 +11,11 @@ class CreateUsersLinkTable extends Migration
         Schema::create('users_link', function (Blueprint $table) {
 
 		$table->id();
+        $table->integer('user_id');
 		$table->text('keyword');
 		$table->text('link');
 		$table->text('judul');
 		$table->integer('hits')->default('0');
-        $table->integer("id_user");
         $table->timestamps();
 
         });

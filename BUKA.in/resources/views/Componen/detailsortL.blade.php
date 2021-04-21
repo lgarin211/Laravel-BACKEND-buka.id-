@@ -1,4 +1,4 @@
-@foreach ($user as $key=>$link )
+@foreach ($data->sort_link as $key=>$link )
 <div style="display: none;" id="m{{$key}}">
     <div class="row jus">
         <div class="col-md-7">
@@ -8,16 +8,15 @@
                 </div>
                 <div class="btn-group" role="group" aria-label="...">
                     <a href="{{$link->judul}}" class="btn btn-primary">
-                        <i style="font-size:30px" class="fas fa-plane-departure"></i></a>
+                        <i  class="fas fa-plane-departure"></i></a>
                     <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalsort">
                         <span class="noselect">
-                            <i style="font-size:30px" class="fas fa-edit"></i>
+                            <i  class="fas fa-edit"></i>
                         </span>
                         <div class="circle-s"></div>
                     </button>
-                    herher
                     <a href="?cekmysort=993&call={{$link->id}}" class="btn btn-primary">
-                        <i style="font-size:30px" class="fa fa-trash"></i>
+                        <i  class="fa fa-trash"></i>
                     </a>
                 </div>
             </div>

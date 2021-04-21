@@ -17,9 +17,15 @@ use Illuminate\Support\Facades\Route;
 // Route::get('/', function () {
 //     return view('welcome');
 // });
+Route::get('/', [Welcome::class, 'hero']);
 
 Route::get('/{LINK}', [Welcome::class, 'temukan']);
 
-Route::get('/', [Welcome::class, 'hero']);
 Route::get('/user/sortLink', [Welcome::class, 'sort']);
 Route::post('/user/sortLink', [Welcome::class, 'sort']);
+
+Route::get('/user/myprofile', [Welcome::class, 'profile']);
+
+
+Route::get('/go/login', [Welcome::class, 'login']);
+Route::get('/go/register', [Welcome::class, 'register']);

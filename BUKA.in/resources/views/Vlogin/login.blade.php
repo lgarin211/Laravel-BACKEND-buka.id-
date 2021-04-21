@@ -10,23 +10,23 @@
         integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
         crossorigin="anonymous" />
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="/vendor/css/bootstrap.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
     <!-- Slick slider -->
-    <link href="css/slick.css" rel="stylesheet">
+    <link href="/vendor/css/slick.css" rel="stylesheet">
     <!-- Gallery Lightbox -->
-    <link href="css/magnific-popup.css" rel="stylesheet">
+    <link href="/vendor/css/magnific-popup.css" rel="stylesheet">
     <!-- Skills Circle CSS  -->
     <link rel="stylesheet" type="text/css" href="https://unpkg.com/circlebars@1.0.3/dist/circle.css">
     <!-- Main Style -->
-    <link href="css/style.css" rel="stylesheet">
+    <link href="/vendor/css/style.css" rel="stylesheet">
     <!-- nav spesial -->
-    <link rel="stylesheet" href="css/spesial_div.css">
+    <link rel="stylesheet" href="/vendor/css/spesial_div.css">
     <!-- Fonts -->
 
     <!-- login -->
-    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="/vendor/css/login.css">
 
     <!-- Google Fonts Raleway -->
     <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,400i,500,500i,600,700" rel="stylesheet">

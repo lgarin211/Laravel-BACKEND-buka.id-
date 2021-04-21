@@ -4,9 +4,14 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
+use Symfony\Component\HttpKernel\Profiler\Profile;
 
 class Welcome extends Controller
 {
+
+
+    public $id=1;
+
     public function hero()
     {
         return view('hero');
@@ -18,7 +23,7 @@ class Welcome extends Controller
         if (!empty($_GET['cekmysort'])) {
 
             switch ($_GET['cekmysort']) {
-        // body mengecek apa keyword sudah di gunakan
+                    // body mengecek apa keyword sudah di gunakan
                 case 991:
                     $user = DB::table('users_link')->where('keyword', $_GET['call'])->first();
 
@@ -33,8 +38,9 @@ class Welcome extends Controller
                     break;
                     // body list sortlink seorang user
                 case 992:
-                    $user = DB::table('users_link')->get();
-                    return view('Componen.listsortL', compact('user'));
+                    $data=$this->Profile("use");
+                    // \dd($data);
+                    return view('Componen.listsortL', compact('data'));
                     break;
                     //aksi penghapusan
                 case 993:
@@ -53,10 +59,9 @@ class Welcome extends Controller
             // dd($_POST);
             unset($_POST["_token"]);
             $_POST['hits'] = 0;
-            $_POST['id_user'] = 1;
+            $_POST['user_id']=$this->id;
             DB::table('users_link')->insert([$_POST]);
             return redirect('/user/sortLink');
-
         }
 
         return \view('sortlink');
@@ -74,5 +79,32 @@ class Welcome extends Controller
         } else {
             return redirect("/");
         }
+    }
+
+    public function login()
+    {
+        return view('Vlogin.login');
+    }
+
+    public function register()
+    {
+        return view('Vlogin.register');
+    }
+
+    // untuk menarik data profile seorang user
+    public function Profile($cek="not use")
+    {
+        $data=DB::table('users')->where('id',$this->id)->first();
+
+        if (!empty($data)) {
+        $data->user_profile=DB::table('users_profile')->where('users_id',$data->id)->first();
+        $data->users_profile_link=DB::table('users_profile_link')->where('profile_id',$data->id)->get();
+        $data->sort_link=DB::table('users_link')->where('user_id',$data->id)->get();
+        }
+        if ($cek=="use") {
+            return $data;
+        }
+        dd($data);
+
     }
 }

@@ -11,6 +11,7 @@ class CreateUsersProfileLinkTable extends Migration
         Schema::create('users_profile_link', function (Blueprint $table) {
 
             $table->id();
+            $table->integer('profile_id');
             $table->string('title');
             $table->text('link');
             $table->text('icon');
