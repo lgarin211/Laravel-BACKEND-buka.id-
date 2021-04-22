@@ -1,5 +1,0 @@
-{
-    "require": {
-        "laravel/jetstream": "^2.3"
-    }
-}

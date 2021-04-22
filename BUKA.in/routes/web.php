@@ -14,18 +14,26 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-// Route::get('/', function () {
-//     return view('welcome');
-// });
+//  Route::get('/', function () {
+//      return view('welcome'); });
 Route::get('/', [Welcome::class, 'hero']);
 
-Route::get('/{LINK}', [Welcome::class, 'temukan']);
 
 Route::get('/user/sortLink', [Welcome::class, 'sort']);
 Route::post('/user/sortLink', [Welcome::class, 'sort']);
+
+Route::get('/user/Pintas', [Welcome::class, 'linktree']);
+// Route::post('/user/sortLink', [Welcome::class, 'sort']);
 
 Route::get('/user/myprofile', [Welcome::class, 'profile']);
 
 
 Route::get('/go/login', [Welcome::class, 'login']);
 Route::get('/go/register', [Welcome::class, 'register']);
+
+Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
+    return view('dashboard');
+})->name('dashboard');
+
+
+Route::get('/{LINK}', [Welcome::class, 'temukan']);

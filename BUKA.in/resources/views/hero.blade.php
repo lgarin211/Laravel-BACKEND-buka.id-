@@ -73,7 +73,7 @@
 						<a class=" btn btn-primary" href="#mu-slider"><i class="fa fa-home"></i></a>
 						<a class=" btn btn-primary" href="#mu-about"><i class="fas fa-city"></i></a>
 						<a class=" btn btn-primary" href="#mu-service"><i class="fas fa-coffee"></i></a>
-						<a class=" btn btn-primary" href="login.html"><i class="fas fa-sign-in-alt"></i></a>
+						<a class=" btn btn-primary" href="/register"><i class="fas fa-sign-in-alt"></i></a>
 					</div>
 				</div>
 			</nav>
@@ -86,7 +86,7 @@
 		<a class="mu-logo logo-here" href="#">
 			<span>BUKA.in</span>
 		</a>
-		<a href="#" class="mu-primary-btn mu-quote-btn logo-here2">
+		<a href="/register" class="mu-primary-btn mu-quote-btn logo-here2">
 			Daftar <i class="fas fa-sign-in-alt"></i>
 		</a>
 	</div>
@@ -104,7 +104,7 @@
 									<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula
 										eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient
 										montes, nascetur ridiculus mus. Donec quam felis,</p>
-									<a class="mu-primary-btn" href="login.html">Mulai.in <span
+									<a class="mu-primary-btn" href="/register">Mulai.in <span
 											class="fas fa-sign-in-alt"></span></a>
 								</div>
 							</div>
@@ -233,7 +233,7 @@
 								<h2>Slogan Here</h2>
 								<p>component for calling extra attention to featured content or information.</p>
 							</div>
-							<a href="login.html" class="mu-primary-btn mu-quote-btn">Daftar Sekarang <i
+							<a href="/register" class="mu-primary-btn mu-quote-btn">Daftar Sekarang <i
 									class="fas fa-sign-in-alt"></i></a>
 						</div>
 					</div>
