@@ -1,0 +1,29 @@
+body{
+    background-image: linear-gradient(315deg, #0004ea 0%, #0091ea 74%);
+}
+.container{
+    padding: 50px;
+    margin-top: 80px;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+}
+.text-nama{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.img-profile{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    width: 30%;
+    border-radius: 20px;
+    border-style: solid;
+}
+.head-links{
+    padding-top: 20px;
+}
+.icons{
+    font-size: 35px;
+    position: relative;
+}

@@ -3,7 +3,9 @@
         <x-slot name="logo">
             <x-jet-authentication-card-logo />
         </x-slot>
-
+        <div class="text-center cpas">
+            <h3>LOGIN<i class="fas fa-house-damage"></i></h3>
+        </div>
         <x-jet-validation-errors class="mb-4" />
 
         @if (session('status'))

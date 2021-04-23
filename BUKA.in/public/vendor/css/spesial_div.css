@@ -28,6 +28,24 @@
 
 }
 
+.spscontainer {
+    padding: 50px;
+    margin: 10px;
+    background-color: #FFFFFF;
+    height: 100vh;
+    border-radius: 10px;
+}
+
+.spscontainer2 {
+    background-color: #0091ea;
+    background-image: linear-gradient(315deg, #0004ea 0%, #0091ea 74%);
+    border-radius: 10px;
+}
+
+.coslink {
+    font-size: 25px;
+}
+
 .spsldiv {
     border-radius: 1%;
     margin-bottom: 10px;
@@ -64,13 +82,14 @@
     display: none;
 
 }
-#graf{
+
+#graf {
     border: red solid;
     height: 50vh;
 }
 
-.tutupan{
-    height: 40vh;    
+.tutupan {
+    height: 40vh;
 }
 
 
@@ -89,11 +108,28 @@
     font-size: 20px;
     margin: 1px auto;
 }
+
 #tilbase {
     color: #fff;
     position: absolute;
     font-size: 40px;
     margin: 40px auto;
+}
+
+#tilbase2 {
+    color: #fff;
+    /* position: absolute; */
+    font-size: 40px;
+    /* margin: 40px auto; */
+}
+
+.cpas {
+
+    color: black;
+    /* position: absolute; */
+    font-size: 25px;
+    /* margin: 40px auto; */
+
 }
 
 
@@ -215,6 +251,10 @@
 }
 
 @media screen and (max-width: 500px) {
+    .coslink {
+        font-size: 15px;
+    }
+
     .aroiba {
         display: none;
     }
