@@ -16,6 +16,16 @@ class Welcome extends Controller
     {
         return view('hero');
     }
+
+    public function linkthri()
+    {
+        $data = $this->Profile('use');
+        if (empty($data->user_profile)) {
+            return view('Vlogin.Lengkapiprofile');
+        }
+        return view('linkthri', compact('data'));
+    }
+
     //FUNGSI PENGENDALIAN SortLink
     public function sort()
     {
@@ -94,6 +104,13 @@ class Welcome extends Controller
     // untuk menarik data profile seorang user
     public function Profile($cek = "not use")
     {
+        if (!empty($_POST)) {
+            $_POST['users_id'] = Auth::user()->id;
+            unset($_POST["_token"]);
+            DB::table('users_profile')->insert($_POST);
+            return redirect('/user/sortLink');
+        }
+
         $data = DB::table('users')->where('id', Auth::user()->id)->first();
 
         if (!empty($data)) {
@@ -105,9 +122,5 @@ class Welcome extends Controller
         if ($cek == "use") {
             return $data;
         }
-        if (empty($data->user_profile)) {
-            return view('Vlogin.Lengkapiprofile');
-        }
-
     }
 }

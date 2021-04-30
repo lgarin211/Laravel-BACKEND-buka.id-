@@ -36,23 +36,23 @@
 </head>
 
 <body class="text-center">
-    <form class="form-signin">
+    <form class="form-signin" method="POST" action="/user/myprofile">
+    @csrf
         <h1 class="md-4 mu-logo logo-here4">BUKA.in</h1>
         <!-- <img class="mb-4" src="../../assets/brand/bootstrap-solid.svg" alt="" width="72" height="72"> -->
         <h1 class="h3 mb-3 font-weight-normal">Please Lengkapi Data</h1>
 
 
         <label for="inputTitle" class="sr-only">Judul Pintasmu</label>
-        <input type="text" id="inputTitle" class="form-control" placeholder="Judul Pintas" required autofocus>
+        <input type="text" id="inputTitle" class="form-control" name="title" placeholder="Judul Pintas" required autofocus>
 
         <label for="inputTitle" class="sr-only">Tema</label>
-        <input type="text" id="inputTitle" class="form-control" placeholder="Pilih Tema" required autofocus>
+        <input type="text" id="inputTitle" class="form-control" name="themes_id" placeholder="Pilih Tema" required autofocus>
 
-        <label for="inputTitle" class="sr-only">Gambar</label>
-        <input type="text" id="inputTitle" class="form-control" placeholder="Input Gambar" required autofocus>
+
 
         <label for="inputTitle" class="sr-only">Bio</label>
-        <textarea type="text" id="inputTitle" class="form-control" placeholder="Masukan Biodata" required autofocus></textarea>
+        <textarea type="text" id="inputTitle" class="form-control" name="bio" placeholder="Masukan Biodata" required autofocus></textarea>
 
         <button type="submit" class="btn btn-lg btn-light btn-block">Kirim</button>
     </form>

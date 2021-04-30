@@ -1,8 +1,8 @@
-    document.getElementById("divmodalsort").style.display = "none"
-    document.getElementById("judul_div").style.display = "none"
-    document.getElementById("sort_url_div").style.display = "none"
+            document.getElementById("divmodalsort").style.display = "none"
+            document.getElementById("judul_div").style.display = "none"
+            document.getElementById("sort_url_div").style.display = "none"
 
-    const sac = screen.width    
+    const sac = screen.width
     const cas = screen.height
     if (cas <= 800) {
         // document.getElementById("casing").classList = ""
@@ -26,7 +26,7 @@
     function cps() {
         // alert(cas)
         if (sac<500) {
-            document.getElementsByClassName("spsldiv2")[0].style.height="120vh"            
+            document.getElementsByClassName("spsldiv2")[0].style.height="120vh"
         }else{
             document.getElementsByClassName("spsldiv2")[0].style.height="70vh"
         }

@@ -15,6 +15,13 @@
     margin-top: 100px;
 }
 
+.btns-s {
+    color: #fff;
+    position: absolute;
+    font-size: 15px;
+    margin: 85px auto;
+}
+
 .coa .form-label {
     font-size: 20px;
     color: #fff;
@@ -60,12 +67,33 @@
 .spsldiv2 {
     border-radius: 1%;
     margin-bottom: 10px;
-    height: 40vh;
+    height: 100vh;
     display: flex;
     /* align-items: center; */
     justify-content: center;
     background-color: #0091ea;
     background-image: linear-gradient(315deg, #0004ea 0%, #0091ea 74%);
+}
+
+.prof {
+    margin: 140px auto;
+    margin-bottom: 0px;
+}
+
+.link {
+    /* margin: 100px auto; */
+    /* margin-bottom: 0px; */
+
+}
+
+.img-profile {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    width: 30%;
+    border-radius: 20px;
+    border-style: solid;
 }
 
 #da2 {
@@ -264,7 +292,7 @@
     }
 
     .spsldiv2 {
-        height: 4/0vh;
+        height: 100vh;
         margin-bottom: 30px;
     }
 

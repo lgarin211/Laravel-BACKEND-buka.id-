@@ -14,7 +14,7 @@ class CreateUsersProfileTable extends Migration
 		$table->integer('themes_id');
 		$table->integer('users_id');
 		$table->string('title');
-		$table->text('picture');
+		// $table->text('picture');
 		$table->text('bio');
 		$table->integer('views')->default('0');
         $table->timestamps();

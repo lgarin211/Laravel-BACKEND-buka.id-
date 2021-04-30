@@ -22,10 +22,11 @@ Route::get('/', [Welcome::class, 'hero']);
 Route::get('/user/sortLink', [Welcome::class, 'sort']);
 Route::post('/user/sortLink', [Welcome::class, 'sort']);
 
-Route::get('/user/Pintas', [Welcome::class, 'linktree']);
+Route::get('/user/linkthri', [Welcome::class, 'linkthri']);
 // Route::post('/user/sortLink', [Welcome::class, 'sort']);
 
 Route::get('/user/myprofile', [Welcome::class, 'profile']);
+Route::post('/user/myprofile', [Welcome::class, 'profile']);
 
 
 Route::get('/go/login', [Welcome::class, 'login']);

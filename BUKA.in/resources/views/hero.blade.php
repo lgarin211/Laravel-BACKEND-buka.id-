@@ -328,7 +328,7 @@
 											</div>
 											<!-- End single service -->
 											<!-- Start single service -->
-											<div class="col-md-4">
+											<!-- <div class="col-md-4">
 												<div class="mu-single-service">
 													<div class="mu-single-service-icon"><i class="fa fa-cog"
 															aria-hidden="true"></i></div>
@@ -338,7 +338,7 @@
 															Aenean commodo ligula eget dolor commodo .</p>
 													</div>
 												</div>
-											</div>
+											</div> -->
 											<!-- End single service -->
 										</div>
 									</div>
