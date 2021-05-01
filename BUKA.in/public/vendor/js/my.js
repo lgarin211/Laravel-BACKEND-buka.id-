@@ -41,6 +41,7 @@
     }
 
     function moving(id) {
+        console.log("ais");
         document.getElementById("casing").classList = "col-md-3 col-sm-12 doc"
         document.getElementById("pancar").innerHTML = ""
         document.getElementById("m" + id).style.display = "block"

@@ -36,7 +36,6 @@ class Welcome extends Controller
                     // body mengecek apa keyword sudah di gunakan
                 case 991:
                     $user = DB::table('users_link')->where('keyword', $_GET['call'])->first();
-
                     if (isset($user)) {
                         echo 'link sudah ada';
                         die;

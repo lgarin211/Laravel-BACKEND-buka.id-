@@ -64,6 +64,7 @@
     background-image: linear-gradient(315deg, #0004ea 0%, #0091ea 74%);
 }
 
+
 .spsldiv2 {
     border-radius: 1%;
     margin-bottom: 10px;
@@ -74,17 +75,22 @@
     background-color: #0091ea;
     background-image: linear-gradient(315deg, #0004ea 0%, #0091ea 74%);
 }
+.spsldiv3{
+    border-radius: 1%;
+    margin-bottom: 10px;
+    height:100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #0091ea;
+    background-image: linear-gradient(315deg, #0004ea 0%, #0091ea 74%);
+}
 
 .prof {
     margin: 140px auto;
     margin-bottom: 0px;
 }
 
-.link {
-    /* margin: 100px auto; */
-    /* margin-bottom: 0px; */
-
-}
 
 .img-profile {
     display: block;
@@ -110,6 +116,16 @@
     display: none;
 
 }
+
+#head2 {
+    width: 100%;
+    height: 100vh;
+    background-color: #0091ea;
+    background-image: linear-gradient(315deg, #0004ea 0%, #0091ea 74%);
+    display: inline;
+    float: left;
+}
+
 
 #graf {
     border: red solid;
@@ -178,6 +194,17 @@
     font-weight: 600;
     font-size: 20px;
     position: absolute;
+    left: 50%;
+    top: 10%;
+    transform: translate(-50%, -10%);
+}
+
+.inea2 {
+    margin: 50% auto;
+    color: #fff;
+    font-weight: 600;
+    font-size: 20px;
+    position: relative;
     left: 50%;
     top: 10%;
     transform: translate(-50%, -10%);
