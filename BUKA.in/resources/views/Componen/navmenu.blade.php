@@ -1,5 +1,5 @@
 <!-- Start Header -->
-<header id="mu-hero" class="fixed-bottom">
+<header id="mu-hero" class="fixed-bottom" data-aos="fade-up">
     <div class="container">
         <nav id="da" class="navbar navbar-expand-lg navbar-light mu-navbar">
             <!-- Text based logo -->

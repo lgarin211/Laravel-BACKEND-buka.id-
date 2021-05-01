@@ -6,7 +6,7 @@
 
 <body>
     @include('Componen.navmenu')
-    <div class="spsldiv2" style="">
+    <div class="spsldiv2" style=""data-aos="fade-up-left">
         <!-- <div id="gari" class=""> -->
         <a class="logo-here7" href="#">
             <span>BUKA.in</span>
@@ -17,7 +17,7 @@
 
     </div>
 
-    <div id="include_list" class="container">
+    <div id="include_list" class="container" data-aos="fade-up">
 
     </div>
 

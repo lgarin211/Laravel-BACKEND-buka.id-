@@ -13,7 +13,7 @@
         </div>
     </div> --}}
 
-    <div class="jumbotron spsldiv3">
+    <div class="jumbotron spsldiv3" data-aos="fade-up-left">
         <div class="head2" id="head2">
             <a class="mu-logo logo-here" href="#">
                 <span>BUKA.in</span>

@@ -13,7 +13,7 @@
     <!-- Start Header -->
     <header id="mu-hero" class="fixed-bottom">
         <div class="container">
-            <nav id="da" class="navbar navbar-expand-lg navbar-light mu-navbar">
+            <nav id="da" class="navbar navbar-expand-lg navbar-light mu-navbar" data-aos="fade-up-left">
                 <!-- Text based logo -->
                 <a class="navbar-brand mu-logo" href="index.html">
                     <span>Buka.in</span>
@@ -36,17 +36,11 @@
             </nav>
             <nav id="da2" class="navbar navbar-expand-lg navbar-light mu-navbar text-center">
                 <div class="aroiba2 row">
-                    <a href="/user/sortLink" class="col-md-6 col-sm-6 btn btn-primary">
-                        <h6 id="base">Sort Link <svg class="svg-inline--fa fa-house-damage fa-w-18" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="house-damage" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" data-fa-i2svg="">
-                                <path fill="currentColor" d="M288 114.96L69.47 307.71c-1.62 1.46-3.69 2.14-5.47 3.35V496c0 8.84 7.16 16 16 16h149.23L192 439.19l104.11-64-60.16-119.22L384 392.75l-104.11 64L319.81 512H496c8.84 0 16-7.16 16-16V311.1c-1.7-1.16-3.72-1.82-5.26-3.2L288 114.96zm282.69 121.32L512 184.45V48c0-8.84-7.16-16-16-16h-64c-8.84 0-16 7.16-16 16v51.69L314.75 10.31C307.12 3.45 297.56.01 288 0s-19.1 3.41-26.7 10.27L5.31 236.28c-6.57 5.91-7.12 16.02-1.21 22.6l21.4 23.82c5.9 6.57 16.02 7.12 22.6 1.21L277.42 81.63c6.05-5.33 15.12-5.33 21.17 0L527.91 283.9c6.57 5.9 16.69 5.36 22.6-1.21l21.4-23.82c5.9-6.57 5.36-16.69-1.22-22.59z"></path>
-                            </svg><!-- <i class="fas fa-house-damage"></i> Font Awesome fontawesome.com -->
-                        </h6>
+                    <a href="/login" class="col-md-6 col-sm-6 btn btn-primary">
+                        <h6 id="base">Login</h6>
                     </a>
-                    <a href="/user/linkthri" class="col-md-6 col-sm-6 btn btn-primary">
-                        <h6 id="base">Link Thri <svg class="svg-inline--fa fa-igloo fa-w-18" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="igloo" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" data-fa-i2svg="">
-                                <path fill="currentColor" d="M320 33.9c-10.5-1.2-21.2-1.9-32-1.9-99.8 0-187.8 50.8-239.4 128H320V33.9zM96 192H30.3C11.1 230.6 0 274 0 320h96V192zM352 39.4V160h175.4C487.2 99.9 424.8 55.9 352 39.4zM480 320h96c0-46-11.1-89.4-30.3-128H480v128zm-64 64v96h128c17.7 0 32-14.3 32-32v-96H411.5c2.6 10.3 4.5 20.9 4.5 32zm32-192H128v128h49.8c22.2-38.1 63-64 110.2-64s88 25.9 110.2 64H448V192zM0 448c0 17.7 14.3 32 32 32h128v-96c0-11.1 1.9-21.7 4.5-32H0v96zm288-160c-53 0-96 43-96 96v96h192v-96c0-53-43-96-96-96z"></path>
-                            </svg><!-- <i class="fas fa-igloo"></i> Font Awesome fontawesome.com -->
-                        </h6>
+                    <a href="/register" class="col-md-6 col-sm-6 btn btn-primary">
+                        <h6 id="base">Register</h6>
                     </a>
                 </div>
                 <div class="row">
@@ -73,7 +67,7 @@
     <!-- End Header -->
 
     <!-- Start slider area -->
-    <div class="head1" id="head1">
+    <div class="head1" id="head1" data-aos="zoom-in">
         <a class="mu-logo logo-here" href="#">
             <span>BUKA.in</span>
         </a>
@@ -81,7 +75,7 @@
             Daftar <i class="fas fa-sign-in-alt"></i>
         </a>
     </div>
-    <div id="mu-slider">
+    <div id="mu-slider" data-aos="zoom-in">
         <div class="mu-slide">
             <!-- Start single slide  -->
             <div class="mu-single-slide">
@@ -153,7 +147,7 @@
     <!-- Start main content -->
     <main>
         <!-- Start About -->
-        <section id="mu-about">
+        <section id="mu-about" data-aos="zoom-in">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
@@ -161,7 +155,7 @@
                             <!-- Title -->
                             <div class="row">
                                 <div class="col-md-12">
-                                    <div class="mu-title">
+                                    <div class="mu-title" data-aos="zoom-in">
                                         <h2>Kenapa Buka.in</h2>
                                         <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
                                             ligula eget dolor. Aenean massa cum sociis.</p>
@@ -169,7 +163,7 @@
                                 </div>
                             </div>
                             <!-- Start Feature Content -->
-                            <div class="row">
+                            <div class="row" data-aos="zoom-in">
                                 <div class="col-md-6">
                                     <div class="mu-about-left">
                                         <img class="" src="vendor/img/about-us.jpg" alt="img">
@@ -178,21 +172,21 @@
                                 <div class="col-md-6">
                                     <div class="mu-about-right">
                                         <ul>
-                                            <li>
+                                            <li data-aos="zoom-in-left">
                                                 <h3>Our Mission</h3>
                                                 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
                                                     commodo ligula eget dolor. Aenean massa. Cum sociis natoque
                                                     penatibus et magnis dis parturient montes, nascetur ridiculus mus.
                                                     Donec quam felis,</p>
                                             </li>
-                                            <li>
+                                            <li data-aos="zoom-in-left">
                                                 <h3>Our Vision</h3>
                                                 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
                                                     commodo ligula eget dolor. Aenean massa. Cum sociis natoque
                                                     penatibus et magnis dis parturient montes, nascetur ridiculus mus.
                                                     Donec quam felis,</p>
                                             </li>
-                                            <li>
+                                            <li data-aos="zoom-in-left">
                                                 <h3>Our Valuse</h3>
                                                 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
                                                     commodo ligula eget dolor. Aenean massa. Cum sociis natoque
@@ -212,7 +206,7 @@
         <!-- End About -->
 
         <!-- Call to Action -->
-        <div id="mu-call-to-action">
+        <div id="mu-call-to-action" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
@@ -235,7 +229,7 @@
                     <div class="col-md-12">
                         <div class="mu-service-area">
                             <!-- Title -->
-                            <div class="row">
+                            <div class="row" data-aos="fade-up-left">
                                 <div class="col-md-12">
                                     <div class="mu-title">
                                         <h2>Our exclusive services</h2>
@@ -250,7 +244,7 @@
                                     <div class="mu-service-content">
                                         <div class="row">
                                             <!-- Start single service -->
-                                            <div class="col-md-4">
+                                            <div class="col-md-4" data-aos="fade-up-left">
                                                 <div class="mu-single-service">
                                                     <div class="mu-single-service-icon"><i class="fas fa-shopping-cart" aria-hidden="true"></i></div>
                                                     <div class="mu-single-service-content">
@@ -262,7 +256,7 @@
                                             </div>
                                             <!-- End single service -->
                                             <!-- Start single service -->
-                                            <div class="col-md-4">
+                                            <div class="col-md-4" data-aos="fade-up-left">
                                                 <div class="mu-single-service">
                                                     <div class="mu-single-service-icon"><i class="fa fa-bullhorn" aria-hidden="true"></i></div>
                                                     <div class="mu-single-service-content">
@@ -274,7 +268,7 @@
                                             </div>
                                             <!-- End single service -->
                                             <!-- Start single service -->
-                                            <div class="col-md-4">
+                                            <div class="col-md-4" data-aos="fade-up-left">
                                                 <div class="mu-single-service">
                                                     <div class="mu-single-service-icon"><i class="fa fa-laptop" aria-hidden="true"></i></div>
                                                     <div class="mu-single-service-content">
@@ -286,7 +280,7 @@
                                             </div>
                                             <!-- End single service -->
                                             <!-- Start single service -->
-                                            <div class="col-md-4">
+                                            <div class="col-md-4" data-aos="fade-up-left">
                                                 <div class="mu-single-service">
                                                     <div class="mu-single-service-icon"><i class="fa fa-mobile" aria-hidden="true"></i></div>
                                                     <div class="mu-single-service-content">
@@ -298,7 +292,7 @@
                                             </div>
                                             <!-- End single service -->
                                             <!-- Start single service -->
-                                            <div class="col-md-4">
+                                            <div class="col-md-4" data-aos="fade-up-left">
                                                 <div class="mu-single-service">
                                                     <div class="mu-single-service-icon"><i class="far fa-grin-alt" aria-hidden="true"></i></div>
                                                     <div class="mu-single-service-content">
@@ -310,7 +304,8 @@
                                             </div>
                                             <!-- End single service -->
                                             <!-- Start single service -->
-                                            <!-- <div class="col-md-4">
+                                            <!-- <div class="col-md-4" data-aos="fade-up"
+     data-aos-anchor-placement="top-center">
 												<div class="mu-single-service">
 													<div class="mu-single-service-icon"><i class="fa fa-cog"
 															aria-hidden="true"></i></div>

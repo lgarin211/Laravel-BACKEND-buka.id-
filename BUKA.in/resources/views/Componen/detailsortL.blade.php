@@ -1,6 +1,6 @@
 @foreach ($data->sort_link as $key=>$link )
-<div style="display: none;" id="m{{$key}}">
-    <div class="row jus">
+<div style="display: none;" id="m{{$key}}" data-aos="fade-up-left">
+    <div class="row jus" data-aos="fade-up-left">
         <div class="col-md-7">
             <div class="text-center">
                 <div id="judul">
