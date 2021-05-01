@@ -4,6 +4,7 @@
     @include("Componen.head")
 
 <body>
+    @include("Componen.navmenu")
     <div class="spsldiv2" style="">
         <!-- <div id="gari" class=""> -->
         <a class="logo-here7" href="#">

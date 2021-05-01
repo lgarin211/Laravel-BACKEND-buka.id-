@@ -20,10 +20,6 @@
     <div id="include_list" class="container" data-aos="fade-up">
 
     </div>
-
-    <footer class="tutupan">
-
-    </footer>
     @include("Componen.foot")
 
 </body>

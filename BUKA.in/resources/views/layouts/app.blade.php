@@ -27,6 +27,7 @@
     @stack('modals')
 
     @livewireScripts
+    @include("Componen.foot")
 </body>
 
 </html>

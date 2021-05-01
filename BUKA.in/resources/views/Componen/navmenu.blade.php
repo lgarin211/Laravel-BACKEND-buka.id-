@@ -1,5 +1,5 @@
 <!-- Start Header -->
-<header id="mu-hero" class="fixed-bottom" data-aos="fade-up">
+<header id="mu-hero" class="fixed-bottom">
     <div class="container">
         <nav id="da" class="navbar navbar-expand-lg navbar-light mu-navbar">
             <!-- Text based logo -->
@@ -23,7 +23,7 @@
                     <li class="nav-item">
                         <form method="POST" action="{{ route('logout') }}">
                             @csrf
-                            <a href="{{ route('logout') }}" onclick="event.preventDefault();
+                            <a href="{{ route('logout') }}" id="logoutnow" onclick="event.preventDefault();
                                                 this.closest('form').submit();">
                                 {{ __('Log Out') }}
                             </a>
@@ -43,14 +43,17 @@
             </div>
             <div class="row">
                 <div class="row text-center m-auto">
-                    <a class="col-sm-3 btn btn-primary" href="#mu-slider"><i style="font-size:30px"
+                    <a class="col-sm-3 btn btn-primary" href="/"><i style="font-size:30px"
                             class="fa fa-home"></i></a>
                     <a class="col-sm-3 btn btn-primary" href="#mu-about"><i style="font-size:30px"
                             class="fas fa-city"></i></a>
-                    <a class="col-sm-3 btn btn-primary" href="#mu-service"><i style="font-size:30px"
+                    <a class="col-sm-3 btn btn-primary" href="/user/profile"><i style="font-size:30px"
                             class="fas fa-coffee"></i></a>
-                    <a class="col-sm-3 btn btn-primary" href="login"><i style="font-size:30px"
-                            class="fas fa-sign-in-alt"></i></a>
+                    @if(Auth::user())
+                    <button class="col-sm-3 btn btn-primary" href="#logoutnow"
+                        onclick="document.getElementById('logoutnow').click()"><i style="font-size:30px"
+                            class="fas fa-sign-in-alt"></i></button>
+                    @endif
                 </div>
             </div>
         </nav>
