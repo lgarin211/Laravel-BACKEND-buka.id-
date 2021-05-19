@@ -19,9 +19,21 @@ class Welcome extends Controller
 
     public function linkthri()
     {
+        if (!empty($_POST)) {
+            $_POST['profile_id'] = Auth::user()->id;
+            $_POST['hits'] = 0;
+            unset($_POST["_token"]);
+            DB::table('users_profile_link')->insert($_POST);
+            unset($_POST);
+        }
         $data = $this->Profile('use');
+
         if (empty($data->user_profile)) {
             return view('Vlogin.Lengkapiprofile');
+        }
+        if (!empty($_GET['id'])) {
+            // dd($data);
+            return view('Componen.linkTree', compact('data'));
         }
         return view('linkthri', compact('data'));
     }
@@ -43,7 +55,6 @@ class Welcome extends Controller
                         echo 'link bisa kamu gunakan';
                         die;
                     }
-
                     break;
                     // body list sortlink seorang user
                 case 992:
@@ -90,15 +101,15 @@ class Welcome extends Controller
         }
     }
 
-    public function login()
-    {
-        return view('Vlogin.login');
-    }
+    // public function login()
+    // {
+    //     return view('Vlogin.login');
+    // }
 
-    public function register()
-    {
-        return view('Vlogin.register');
-    }
+    // public function register()
+    // {
+    //     return view('Vlogin.register');
+    // }
 
     // untuk menarik data profile seorang user
     public function Profile($cek = "not use")

@@ -23,6 +23,7 @@ Route::get('/user/sortLink', [Welcome::class, 'sort']);
 Route::post('/user/sortLink', [Welcome::class, 'sort']);
 
 Route::get('/user/linkthri', [Welcome::class, 'linkthri']);
+Route::post('/user/linkthri', [Welcome::class, 'linkthri']);
 // Route::post('/user/sortLink', [Welcome::class, 'sort']);
 
 Route::get('/user/myprofile', [Welcome::class, 'profile']);
