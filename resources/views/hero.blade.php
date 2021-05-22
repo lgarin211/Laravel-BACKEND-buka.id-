@@ -30,7 +30,7 @@
                         <li class="nav-item"><a href="#mu-about">About us</a></li>
                         <li class="nav-item"><a href="#mu-service">Services</a></li>
                         <li class="nav-item"><a href="/login">Login</a></li>
-                        <li class="nav-item"><a href="/register">Register</a></li>
+                        <li class="nav-item"><a href="{{url('/register')}}">Register</a></li>
                     </ul>
                 </div>
             </nav>
@@ -39,7 +39,7 @@
                     <a href="/login" class="col-md-6 col-sm-6 btn btn-primary">
                         <h6 id="base">Login</h6>
                     </a>
-                    <a href="/register" class="col-md-6 col-sm-6 btn btn-primary">
+                    <a href="{{url('/register')}}" class="col-md-6 col-sm-6 btn btn-primary">
                         <h6 id="base">Register</h6>
                     </a>
                 </div>
@@ -71,7 +71,7 @@
         <a class="mu-logo logo-here" href="#">
             <span>BUKA.in</span>
         </a>
-        <a href="/register" class="mu-primary-btn mu-quote-btn logo-here2">
+        <a href="{{url('/register')}}" class="mu-primary-btn mu-quote-btn logo-here2">
             Daftar <i class="fas fa-sign-in-alt"></i>
         </a>
     </div>
@@ -89,7 +89,7 @@
                                     <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula
                                         eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient
                                         montes, nascetur ridiculus mus. Donec quam felis,</p>
-                                    <a class="mu-primary-btn" href="/register">Mulai.in <span class="fas fa-sign-in-alt"></span></a>
+                                    <a class="mu-primary-btn" href="{{url('/register')}}">Mulai.in <span class="fas fa-sign-in-alt"></span></a>
                                 </div>
                             </div>
                         </div>
@@ -215,7 +215,7 @@
                                 <h2>Slogan Here</h2>
                                 <p>component for calling extra attention to featured content or information.</p>
                             </div>
-                            <a href="/register" class="mu-primary-btn mu-quote-btn">Daftar Sekarang <i class="fas fa-sign-in-alt"></i></a>
+                            <a href="{{url('/register')}}" class="mu-primary-btn mu-quote-btn">Daftar Sekarang <i class="fas fa-sign-in-alt"></i></a>
                         </div>
                     </div>
                 </div>

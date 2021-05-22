@@ -15,12 +15,12 @@
 		integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
 		crossorigin="anonymous" />
     <!-- Styles -->
-    <link rel="stylesheet" href="{{ mix('css/app.css') }}">
-    <link rel="stylesheet" href="/vendor/css/spesial_div.css">
+    <link rel="stylesheet" href="{{ url('/') }}{{ mix('css/app.css') }}">
+    <link rel="stylesheet" href="{{ asset('/') }}/vendor/css/spesial_div.css">
 
 
     <!-- Scripts -->
-    <script src="{{ mix('js/app.js') }}" defer></script>
+    <script src="{{ url('/') }}{{ mix('js/app.js') }}" defer></script>
 </head>
 
 <body class="spscontainer2">

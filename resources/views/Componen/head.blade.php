@@ -7,17 +7,17 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
     {{-- aos --}}
-    <link rel="stylesheet" href="{{asset('')}}vendor/css/aos.css">
+    <link rel="stylesheet" href="{{asset('/')}}vendor/css/aos.css">
     <!-- Fonts -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap">
     {{-- <!-- Font Awesome --> --}}
-    <link rel="stylesheet" href="{{asset('')}}vendor/css/fw.css"/>
+    <link rel="stylesheet" href="{{asset('/')}}vendor/css/fw.css"/>
     {{-- <!-- Styles --> --}}
-    <link rel="stylesheet" href="{{ mix('css/app.css') }}">
+    <link rel="stylesheet" href="{{ url(mix('css/app.css')) }}">
     @livewireStyles
-    <link rel="stylesheet" href="{{asset('')}}vendor/css/spesial_div.css">
+    <link rel="stylesheet" href="{{asset('/')}}vendor/css/spesial_div.css">
     {{-- <!-- Scripts --> --}}
-    <script src="{{ mix('js/app.js') }}" defer></script>
+    <script src="{{ url(mix('js/app.js')) }}" defer></script>
     {{-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
         integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
         crossorigin="anonymous" /> --}}
