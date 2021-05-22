@@ -89,7 +89,7 @@
                                     <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula
                                         eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient
                                         montes, nascetur ridiculus mus. Donec quam felis,</p>
-                                    <a class="mu-primary-btn" href="{{url('/register')}}">Mulai.in <span class="fas fa-sign-in-alt"></span></a>
+                                    <a class="mu-primary-btn" href="{{url('/register')  }}">Mulai.in <span class="fas fa-sign-in-alt"></span></a>
                                 </div>
                             </div>
                         </div>
